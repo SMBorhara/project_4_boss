@@ -20,6 +20,11 @@ app.use('/api', apiRouter);
 const minionsRouter = require('./server/minions');
 app.use('/minions', minionsRouter);
 
+const ideaRouter = require('./server/ideas')
+app.use('/ideas', ideaRouter);
+
+const meetingRouter = require('./server/meetings')
+app.use('/meetings', meetingRouter);
 // This conditional is here for testing purposes:
 if (!module.parent) {
 	// Add your code to start the server listening at PORT below:
